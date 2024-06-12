@@ -1,0 +1,26 @@
+.dishes-menu {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  border-left: 1px solid #1a65c672;
+  display: inline-block;
+}
+.menu-title {
+  font-size: 2em;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+.dishes-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .dishes-container {
+    grid-template-columns: 1fr;
+  }
+}
